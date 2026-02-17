@@ -1,0 +1,234 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  background-color: whitesmoke;
+  color: #54b3d6;
+}
+.footer a {
+  color: #54b3d6;
+  text-decoration: none;
+}
+.white {
+  height: 300px;
+  width: 800px;
+  background-color: white;
+}
+.top a {
+  color: blue;
+  font-size: 18px;
+  text-decoration: none;
+}
+.navigation {
+  background-color: white;
+  list-style: none;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: -30px;
+  margin-right: 55px;
+}
+
+.navigation a {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.cart {
+  height: 35px;
+  width: 35px;
+  float: left;
+}
+
+.navigation a:hover {
+  background-position: 0;
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
+
+.navleft {
+  background-color: white;
+  list-style: none;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.navleft li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navleft a {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.navleft a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navleft a:hover {
+  background-position: 0;
+}
+
+.navleft a:hover::before {
+  width: 100%;
+}
+
+.products {
+  height: 300px;
+}
+.products img {
+  margin-bottom: 15px;
+}
+.products .card-text {
+  text-align: center;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #54b3d6;
+}
+
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.product-image {
+  height: 700px;
+  width: 800px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.ProductIMG {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.product-price {
+  background-color: thistle;
+  color: white;
+  text-align: center;
+
+  border-radius: 20px;
+  height: 33px;
+  width: 150px;
+  font-size: 20px;
+}
+.product-description {
+  font-size: 25px;
+}
+.cart-image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.no_prod {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.prod-name {
+  color: #54b3d6;
+}
+.social {
+  text-align: right;
+}
+.login {
+  display: block;
+  margin: 0 auto;
+}
